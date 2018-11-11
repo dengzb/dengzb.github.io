@@ -7,11 +7,40 @@
 
     
 
-    <title>Dylan</title>
+    <title>compiler2 | Dylan</title>
     <meta name="author" content="Dylan Deng" />
     <meta name="version" content="1.0.0" />
     <meta name="keywords" content="" />
-    <meta name="description" content="邓征标在 Github 上的个人博客" />
+    <meta name="description" content="第二章 词法分析正则表达式(Regular Expression)表示法
+符号 (symbol)
+可选 (alternation)  a|b  a或者b
+联结 (concatenation) a‧b  ab
+ϵ (epsilon) 空字符串
+重复 (repetition) M的克林闭包 M*， 表示M的0至多次联结运算
+扩展符号 [ ] 和 ? 和 +
+
+正则表达式示例
+
+
+正则表达式
+token
+
+
+
+
+if
+IF
+
+
+[a-z][a-z0-9]*
+ID
+
+
+[0-9]+
+NUM
+
+
+([0-" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
     <meta name="baidu-site-verification" content="F0CXvmUgA9" />
@@ -32,7 +61,7 @@
 
         
         
-        <li class="nav-item active">
+        <li class="nav-item">
             <a class="nav-link" href="/">首页</a>
         </li>
         
@@ -82,47 +111,23 @@
 
         
         
+        
+        
 
         
-        <div class="author-meta">
-            
-            <div class="author-avatar">
-                <a href="/">
-                    <img src="http://dylan-space.s3.amazonaws.com/avatar.jpg" title="Sanonz">
-                </a>
-            </div>
-            
-            <div class="author-name">Dylan&#39;s Blog</div>
-            <div class="author-work">Stay Young, Stay Simple</div>
-            <div class="author-location">
-                <i class="icon-location vm"></i>
-                <span class="vm">Boston, USA</span>
-            </div>
-            
-            <div class="author-thread-wrap">
-                <div class="author-threads clearfix">
-                    
-                    <a class="thread-item" href="https://github.com/dengzb" target="_blank" rel="noopener"><i class="icon-github"></i></a>
-                    
-                    
-                    
-                </div>
-            </div>
-            
-        </div>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#第二章-词法分析"><span class="toc-number">1.</span> <span class="toc-text">第二章 词法分析</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#正则表达式-Regular-Expression"><span class="toc-number">1.0.1.</span> <span class="toc-text">正则表达式(Regular Expression)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#表示法"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">表示法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#正则表达式示例"><span class="toc-number">1.0.1.2.</span> <span class="toc-text">正则表达式示例</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#二义性处理"><span class="toc-number">1.0.1.3.</span> <span class="toc-text">二义性处理</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#有限自动机-Deterministic-Finite-Automation"><span class="toc-number">1.0.2.</span> <span class="toc-text">有限自动机(Deterministic Finite Automation)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#非确定有限自动机-Nondeterministic-Finite-Automation"><span class="toc-number">1.0.3.</span> <span class="toc-text">非确定有限自动机(Nondeterministic Finite Automation)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#正则表达式-gt-NFA"><span class="toc-number">1.0.3.1.</span> <span class="toc-text">正则表达式-> NFA</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#NFA-gt-DFA"><span class="toc-number">1.0.3.2.</span> <span class="toc-text">NFA-> DFA</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Lex"><span class="toc-number">1.0.4.</span> <span class="toc-text">Lex</span></a></li></ol></li></ol></li></ol>
         
     </div>
 </aside>
 
 </header>
 
-        <div id="content" class="content">
-    <article class="article" itemscope itemprop="blogPost">
+        <div id="content" class="content"><article class="article" itemscope itemprop="blogPost">
     
     <header class="article-header">
         
         <h1 itemprop="name">
-            <a href="/2018/05/31/compiler2/">compiler2</a>
+            compiler2
         </h1>
         
         <div class="article-meta clearfix">
@@ -210,141 +215,6 @@
 </article>
 
 
-    <article class="article" itemscope itemprop="blogPost">
-    
-    <header class="article-header">
-        
-        <h1 itemprop="name">
-            <a href="/2018/05/31/compiler/">编译原理学习笔记1</a>
-        </h1>
-        
-        <div class="article-meta clearfix">
-            <a class="article-date" href="/2018/05/31/compiler/">
-    
-    <i class="icon-calendar"></i>
-    
-    <time datetime="2018-05-31T23:56:25.000Z" itemprop="datePublished">2018-05-31</time>
-</a>
-
-            
-<div class="article-tag-list">
-    <i class="icon-tag"></i>
-    <a class="article-tag-link" href="/tags/技术/">技术</a>, <a class="article-tag-link" href="/tags/编译原理/">编译原理</a>
-</div>
-
-
-        </div>
-    </header>
-    
-    <section class="article-body markdown-body">
-        
-        <h1 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h1><h2 id="模块与接口"><a href="#模块与接口" class="headerlink" title="模块与接口"></a>模块与接口</h2><p>编译器各个阶段：<br><img src="https://s3.amazonaws.com/dylan-space/interface1-1.PNG" alt=""><br>各个阶段的功能如下：</p>
-<table>
-<thead>
-<tr>
-<th>阶段</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>词法分析</td>
-<td>将源文件分解为一个个单独的单词符号</td>
-</tr>
-<tr>
-<td>语法分析</td>
-<td>分析短语结构</td>
-</tr>
-<tr>
-<td>语义动作</td>
-<td>建立每个短语对应的抽象语法树  </td>
-</tr>
-<tr>
-<td>语义分析</td>
-<td>确定每个短语含义，建立变量和声明关联，检查表达式类型，翻译短语</td>
-</tr>
-<tr>
-<td>栈帧布局</td>
-<td>按机器要求把变量，函数参数分配到活跃记录内</td>
-</tr>
-<tr>
-<td>翻译</td>
-<td>生成中间表示树（IR）</td>
-</tr>
-<tr>
-<td>规范化</td>
-<td>提取表达式副作用，整理条件分支</td>
-</tr>
-<tr>
-<td>指令选择</td>
-<td>将IR树节点组合成目标机指令对应块</td>
-</tr>
-<tr>
-<td>控制流分析</td>
-<td>分析指令顺序，建立控制流图</td>
-</tr>
-<tr>
-<td>数据流分析</td>
-<td>收集变量数据流信息，例如 活跃分析</td>
-</tr>
-<tr>
-<td>寄存器分配</td>
-<td>为程序和变量和临时数据选择寄存器</td>
-</tr>
-<tr>
-<td>代码流出</td>
-<td>用机器寄存器代替指令中的临时变量名</td>
-</tr>
-</tbody>
-</table>
-<p>两个有用的抽象</p>
-<ul>
-<li>上下文无关文法（Context-free Grammar）</li>
-<li>正则表达式（Regular Expression）</li>
-</ul>
-
-        
-    </section>
-</article>
-
-
-    <article class="article" itemscope itemprop="blogPost">
-    
-    <header class="article-header">
-        
-        <h1 itemprop="name">
-            <a href="/2018/01/25/JavaMultiThread/">Java Multi Thread</a>
-        </h1>
-        
-        <div class="article-meta clearfix">
-            <a class="article-date" href="/2018/01/25/JavaMultiThread/">
-    
-    <i class="icon-calendar"></i>
-    
-    <time datetime="2018-01-26T04:13:48.000Z" itemprop="datePublished">2018-01-25</time>
-</a>
-
-            
-<div class="article-tag-list">
-    <i class="icon-tag"></i>
-    <a class="article-tag-link" href="/tags/Java/">Java</a>
-</div>
-
-
-        </div>
-    </header>
-    
-    <section class="article-body markdown-body">
-        
-        <h1 id="Java-的多线程实现。"><a href="#Java-的多线程实现。" class="headerlink" title="Java 的多线程实现。"></a>Java 的多线程实现。</h1><p>Java 多线程是实例，一般的锁（Synchromized）是加在实例上的锁，对不同的实例使用的是不同的锁，一般锁不住。？？？？</p>
-<h2 id="继承Thread类"><a href="#继承Thread类" class="headerlink" title="继承Thread类"></a>继承Thread类</h2><h2 id="实现Runnable-接口"><a href="#实现Runnable-接口" class="headerlink" title="实现Runnable 接口"></a>实现Runnable 接口</h2><h2 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h2><h3 id="多线程计数器"><a href="#多线程计数器" class="headerlink" title="多线程计数器"></a>多线程计数器</h3>
-        
-    </section>
-</article>
-
-
-
-
 
 </div>
         <footer class="footer">
@@ -357,6 +227,8 @@
     </div>
 
     <script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.9.0/jquery.min.js"></script>
+    
+    <script type="text/javascript" src="/js/scrollspy.min.js"></script>
     
     <script type="text/javascript">
         $(function() {
@@ -378,6 +250,8 @@
                 nodes.navTags.removeClass('tag-show');
             });*/
 
+            
+            $(document.body).scrollspy({target: '#aside-inner'});
             
         });
     </script>
