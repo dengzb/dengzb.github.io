@@ -1,25 +1,14 @@
-.page-nav {
-  padding: 20px 0;
-  text-align: center;
-  line-height: 1;
+.page-header i {
+	color: red;
+	letter-spacing: 2px;
+	text-align: center;
+	margin: 60px 0 60px 0;
 }
-.page-nav .page-number,
-.page-nav .extend {
-  display: inline-block;
-  margin: 0 6px;
-  padding: 4px 10px;
-  color: #333;
-  border: 1px solid #464646;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+
+.blog-text-center {
+	text-align: center;
 }
-.page-nav .current,
-.page-nav .page-number:hover,
-.page-nav .extend:hover {
-  color: #fff;
-  background-color: #333;
-}
-.page-nav .space {
-  margin: 0 4px;
+
+.blog-article-p {
+	margin: 3rem 0;
 }
