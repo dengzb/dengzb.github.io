@@ -7,11 +7,12 @@
 
     
 
-    <title>归档 | Dylan</title>
+    <title>Java Multi Thread | Dylan</title>
     <meta name="author" content="Dylan Deng" />
     <meta name="version" content="1.0.0" />
     <meta name="keywords" content="" />
-    <meta name="description" content="邓征标在 Github 上的个人博客" />
+    <meta name="description" content="Java 的多线程实现。Java 多线程是实例，一般的锁（Synchromized）是加在实例上的锁，对不同的实例使用的是不同的锁，一般锁不住。？？？？
+继承Thread类实现Runnable 接口例子多线程计数器" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
     <meta name="baidu-site-verification" content="F0CXvmUgA9" />
@@ -59,7 +60,7 @@
         
         
         
-        <li class="nav-item active">
+        <li class="nav-item">
             <a class="nav-link" href="/archives">归档</a>
         </li>
         
@@ -82,70 +83,50 @@
 
         
         
+        
+        
 
         
-        <div class="author-meta">
-            
-            <div class="author-avatar">
-                <a href="/">
-                    <img src="http://dylan-space.s3.amazonaws.com/avatar.jpg" title="Sanonz">
-                </a>
-            </div>
-            
-            <div class="author-name">Dylan&#39;s Blog</div>
-            <div class="author-work">Stay Young, Stay Simple</div>
-            <div class="author-location">
-                <i class="icon-location vm"></i>
-                <span class="vm">Boston, USA</span>
-            </div>
-            
-            <div class="author-thread-wrap">
-                <div class="author-threads clearfix">
-                    
-                    <a class="thread-item" href="https://github.com/dengzb" target="_blank" rel="noopener"><i class="icon-github"></i></a>
-                    
-                    
-                    
-                </div>
-            </div>
-            
-        </div>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Java-的多线程实现。"><span class="toc-number">1.</span> <span class="toc-text">Java 的多线程实现。</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#继承Thread类"><span class="toc-number">1.1.</span> <span class="toc-text">继承Thread类</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#实现Runnable-接口"><span class="toc-number">1.2.</span> <span class="toc-text">实现Runnable 接口</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#例子"><span class="toc-number">1.3.</span> <span class="toc-text">例子</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#多线程计数器"><span class="toc-number">1.3.1.</span> <span class="toc-text">多线程计数器</span></a></li></ol></li></ol></li></ol>
         
     </div>
 </aside>
 
 </header>
 
-        <div id="content" class="content">
-
+        <div id="content" class="content"><article class="article" itemscope itemprop="blogPost">
     
+    <header class="article-header">
+        
+        <h1 itemprop="name">
+            Java Multi Thread
+        </h1>
+        
+        <div class="article-meta clearfix">
+            <a class="article-date" href="/2018/01/25/JavaMultiThread/">
     
+    <i class="icon-calendar"></i>
     
-    
-    <section class="archives-wrap">
-    <div class="archive-year-wrap">
-    <a href="/archives/2018" class="archive-year">2018</a>
-    </div>
-    <ol class="archives">
-    
-
-    <li class="archive-section-item">
-        <article class="archive-article archive-type-post">
-    <div class="archive-article-inner">
-        <header class="archive-article-header">
-            <a href="/2018/01/25/JavaMultiThread/">Java Multi Thread</a>
-            (<a class="article-date" href="/2018/01/25/JavaMultiThread/">
-    
-    <time datetime="2018-01-26T01:13:48.000Z" itemprop="datePublished">1/25</time>
+    <time datetime="2018-01-26T01:13:48.000Z" itemprop="datePublished">2018-01-25</time>
 </a>
-)
-        </header>
-    </div>
+
+            
+<div class="article-tag-list">
+    <i class="icon-tag"></i>
+    <a class="article-tag-link" href="/tags/Java/">Java</a>
+</div>
+
+
+        </div>
+    </header>
+    
+    <section class="article-body markdown-body">
+        
+        <h1 id="Java-的多线程实现。"><a href="#Java-的多线程实现。" class="headerlink" title="Java 的多线程实现。"></a>Java 的多线程实现。</h1><p>Java 多线程是实例，一般的锁（Synchromized）是加在实例上的锁，对不同的实例使用的是不同的锁，一般锁不住。？？？？</p>
+<h2 id="继承Thread类"><a href="#继承Thread类" class="headerlink" title="继承Thread类"></a>继承Thread类</h2><h2 id="实现Runnable-接口"><a href="#实现Runnable-接口" class="headerlink" title="实现Runnable 接口"></a>实现Runnable 接口</h2><h2 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h2><h3 id="多线程计数器"><a href="#多线程计数器" class="headerlink" title="多线程计数器"></a>多线程计数器</h3>
+        
+    </section>
 </article>
-    </li>
-
-
-</ol></section>
 
 
 
@@ -160,6 +141,8 @@
     </div>
 
     <script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.9.0/jquery.min.js"></script>
+    
+    <script type="text/javascript" src="/js/scrollspy.min.js"></script>
     
     <script type="text/javascript">
         $(function() {
@@ -181,6 +164,8 @@
                 nodes.navTags.removeClass('tag-show');
             });*/
 
+            
+            $(document.body).scrollspy({target: '#aside-inner'});
             
         });
     </script>
